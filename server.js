@@ -26,7 +26,7 @@ const formatMessage = require("./utils/messages");
         //listen for chatMessage
         socket.on('chatMessage', (message) => {
             const {username, room, msg} = message;
-            console.log(username, msg, room);
+            // console.log(username, msg, room);
             io.emit('message', formatMessage(username, room, msg));
         })
 
