@@ -17,11 +17,11 @@ const adminName = 'WOULD U DUO'
 
 //Run when client connect
 io.on('connection', socket => {
-
+    // console.log('연결됨');
     //listen for chatMessage
     socket.on('chatMessage', (message) => {
         const {username, room, msg} = message;
-        console.log(username, msg, room);
+        // console.log(username, msg, room);
         io.emit('message', formatMessage(username, room, msg));
     })
 
