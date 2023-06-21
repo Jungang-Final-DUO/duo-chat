@@ -2,6 +2,7 @@ const express = require("express");
 const http = require("http");
 const socketio = require("socket.io");
 const formatMessage = require("./utils/messages");
+const moment = require("moment/moment");
 (() => {
     const http = require('http');
     const express = require('express');
@@ -26,7 +27,7 @@ const formatMessage = require("./utils/messages");
         //listen for chatMessage
         socket.on('chatMessage', (message) => {
             const {username, room, msg} = message;
-            // console.log(username, msg, room);
+            console.log(moment().format('MM.dd HH:mm'));
             io.emit('message', formatMessage(username, room, msg));
         })
 
