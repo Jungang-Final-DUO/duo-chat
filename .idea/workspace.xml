@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb61cc9e-f315-4493-9307-dc6669b7667a" name="변경" comment="clear dummy code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/messages.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +50,7 @@
       <workItem from="1686788893235" duration="15994000" />
       <workItem from="1687149523980" duration="11170000" />
       <workItem from="1687226075008" duration="766000" />
+      <workItem from="1687394311795" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="message rendering for each room">
       <created>1686828711738</created>

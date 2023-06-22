@@ -27,7 +27,7 @@ const moment = require("moment/moment");
         //listen for chatMessage
         socket.on('chatMessage', (message) => {
             const {username, room, msg} = message;
-            console.log(moment().format('MM.dd HH:mm'));
+            // console.log(moment().format('MM.dd HH:mm'));
             io.emit('message', formatMessage(username, room, msg));
         })
 
