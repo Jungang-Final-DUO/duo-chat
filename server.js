@@ -14,7 +14,7 @@ const moment = require("moment/moment");
 
     const io = socketio(server, {
         cors: {
-            origin: "http://localhost:8282",
+		origin: "http://3.35.212.146:80",
             methods: ["GET", "POST"],
         }
     });
@@ -36,6 +36,6 @@ const moment = require("moment/moment");
 
     const PORT = 3000 || process.env.PORT;
 
-    server.listen(PORT, () => console.log(`server running on port ${PORT}`));
+    server.listen(PORT,'0.0.0.0', () => console.log(`server running on port ${PORT}`));
 
 })();
