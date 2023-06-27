@@ -26,9 +26,9 @@ const moment = require("moment/moment");
         console.log('연결됨');
         //listen for chatMessage
         socket.on('chatMessage', (message) => {
-            const {username, room, msg} = message;
-            // console.log(moment().format('MM.dd HH:mm'));
-            io.emit('message', formatMessage(username, room, msg));
+            const {username, room, msg, matchingStatus} = message;
+            console.log(moment().format('MM.DD HH:mm'));
+            io.emit('message', formatMessage(username, room, msg, matchingStatus));
         })
 
     });
