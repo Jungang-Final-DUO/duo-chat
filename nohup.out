@@ -134,3 +134,8 @@ Emitted 'error' event on Server instance at:
 }
 
 Node.js v18.16.1
+
+> duo-chat@1.0.0 start
+> node server
+
+server running on port 3000

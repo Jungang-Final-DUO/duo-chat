@@ -14,7 +14,7 @@ const moment = require("moment/moment");
 
     const io = socketio(server, {
         cors: {
-		origin: "http://3.35.212.146:80",
+		origin: "*",
             methods: ["GET", "POST"],
         }
     });
